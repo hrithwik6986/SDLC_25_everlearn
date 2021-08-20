@@ -11,3 +11,37 @@ Folder                  | Description
 `6_ImagesAndVideos`     | Output images and videos of the project.
 
 
+## Contributors List and Summary
+
+SFID.  |  Name      |    Features                       |   No Test Cases|  Test Case Pass|
+-------|----------- |-----------------------------------|----------------|----------------|
+       |            |                                   |                |                |
+
+| Feature Id | Feature |
+| -----------|---------|
+|F_01|                      |
+|F_02|                      |
+|F_03|                      |
+|F_04|                      |
+|F_05|                      |
+|F_06|                      |
+|F_07|                      |
+|F_08|                      |
+
+
+# Detail Requirements
+
+## High Level Requirements
+
+|      ID          |Description                          |Status                         
+|----------------|-------------------------------|-----------------------------|
+|HR_01|Operating System (Windows 10)             |Implemented                  |
+|HR_02|python language                           |Implemented                  |
+
+## Low Level Requirements
+
+|      ID          |Description                          |Status                         
+|----------------|-------------------------------|-----------------------------|
+|LR_01|                                          |Implemented                  |
+|LR_02|                                          |Implemented|
+|LR_03| 
