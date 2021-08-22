@@ -8,6 +8,9 @@
 
 ### Usecase Diagrams TicTacToe
 ![Usecase Diagram for Tictactoe](Tictactoe.png)
+### TicTacToe flowchart
+![Tictactoe flowchart](https://user-images.githubusercontent.com/43541961/130364475-8ef3cfde-d192-4241-af4b-cdb68e41b282.png)
+
 
 ### Usecase Diagrams QuizGame 
 ![Usecase Diagram for QuizGame](QuizGame.png)
@@ -16,6 +19,9 @@
 
 ### Usecase Diagrams Hangman
 ![Usecase Diagram for Hangman](Hangman.png)
+### Hangman flowchart
+![00081](https://user-images.githubusercontent.com/43541961/130364546-e5e11896-fb2a-4644-9a71-6d334104a514.jpeg)
+
 
 ###  Usecase Diagrams Snake Game
 ![snake_game_usecase](https://user-images.githubusercontent.com/43541961/130362928-41ee4589-73c3-4c1d-984a-c12ee3ed8c1f.png)
