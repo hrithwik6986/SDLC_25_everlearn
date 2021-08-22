@@ -49,10 +49,10 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 
 ## Low Level Requirements
 
-|      ID          |Description                          |Status                         
+|      ID          |Description                          |High level ID|Status |                        
 |----------------|-------------------------------|-----------------------------|
-|LR_01|       A 3x3 grid is displayed for tic-tac-toe                                   |Implemented                  |
-|LR_02|          Two players, first called as X and the second O                                |Implemented|
-|LR_03| Alternate chances are given to the players|Implemented|
-|LR_04| After every move an updated version of the grid is displayed|Implemented|
-|LR_05| When the game ends the final and updated grid is displayed with the winner's name|Implemented|
+|LR_01|       A 3x3 grid is displayed for tic-tac-toe                                   |HR_03|Implemented                  |
+|LR_02|          Two players, first called as X and the second O                                |HR_03|Implemented|
+|LR_03| Alternate chances are given to the players|HR_03|Implemented|
+|LR_04| After every move an updated version of the grid is displayed|HR_03|Implemented|
+|LR_05| When the game ends the final and updated grid is displayed with the winner's name|HR_03|Implemented|
