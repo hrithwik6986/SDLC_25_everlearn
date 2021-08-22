@@ -4,6 +4,7 @@
    
 
 ### Functional Requirement
+ * The game zone has a menu for the user to choose from multiple games available.
  * Users will be able to switch between different games easily.
  * Each time a user quits a particular game, he/she will return to the main menu.
    
