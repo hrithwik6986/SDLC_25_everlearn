@@ -1,11 +1,20 @@
 # Requirements
-## User Requirements :
+## User Requirements 
    Since the project consists of multiple games, the intended users are gamers and programmers.
+   
 
-### BASIC FUNCTIONS
+### Functional Requirement
+ * Users will be able to switch between different games easily.
+ * Each time a user quits a particular game, he/she will return to the main menu.
+   
+### Non Functional Requirement
+ * Maintainability 
+   Project will be open source. This will provide maintainability by other developers, even if the project group stops working.
+ * Portability
+   The prject shall be portable through linux systems too.
 
-
-
+### Performance Requirement
+   Artificial intelligence has to make decisions quick enough for fluent game playability.
 
 ### Benefits
  * Improved multi-tasking skills.
