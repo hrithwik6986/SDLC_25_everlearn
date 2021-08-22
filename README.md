@@ -1,6 +1,9 @@
 # SDLC_team25_everlearn
 # WELCOME TO  "GAMEZONE"
-![Banner](https://github.com/hrithwik6986/SDLC_25_everlearn/blob/main/1_Requirements/game.jpg)
+![Banner](https://github.com/hrithwik6986/SDLC_25_everlearn/blob/main/1_Requirements/gaming.png)
+
+
+
 ## Folder Structure
 Folder                  | Description
 ------------------------| -----------------------------------------
@@ -38,11 +41,18 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 |----------------|-------------------------------|-----------------------------|
 |HR_01|Operating System (Windows 10)             |Implemented                  |
 |HR_02|python language                           |Implemented                  |
+|HR_03|User shall be able to play tic-tac-toe game|Implemented                 |
+|HR_04|                                          |                             |
+|HR_05|                                          |                             |
+|HR_06|                                          |                             |
+
 
 ## Low Level Requirements
 
-|      ID          |Description                          |Status                         
-|----------------|-------------------------------|-----------------------------|
-|LR_01|                                          |Implemented                  |
-|LR_02|                                          |Implemented|
-|LR_03| 
+|      ID          |Description                          |High level ID|Status |                        
+|----------------|-------------------------------|-----------------------------|------------------------------|
+|LR_01|       A 3x3 grid is displayed for tic-tac-toe                                   |HR_03|Implemented                  |
+|LR_02|          A player and a computer, one called as X and the other as O                                |HR_03|Implemented|
+|LR_03| Alternate chances are given to the player and computer|HR_03|Implemented|
+|LR_04| After every move an updated version of the grid is displayed|HR_03|Implemented|
+|LR_05| When the game ends the final and updated grid is displayed with the winner's name|HR_03|Implemented|

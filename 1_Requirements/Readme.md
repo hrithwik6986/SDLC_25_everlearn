@@ -1,10 +1,21 @@
 # Requirements
-## Introduction
+## User Requirements 
+   Since the project consists of multiple games, the intended users are gamers and programmers.
+   
 
-### BASIC FUNCTIONS
+### Functional Requirement
+ * The game zone has a menu for the user to choose from multiple games available.
+ * Users will be able to switch between different games easily.
+ * Each time a user quits a particular game, he/she will return to the main menu.
+   
+### Non Functional Requirement
+ * Maintainability 
+   Project will be open source. This will provide maintainability by other developers, even if the project group stops working.
+ * Portability
+   The prject shall be portable through linux systems too.
 
-
-
+### Performance Requirement
+   Artificial intelligence has to make decisions quick enough for fluent game playability.
 
 ### Benefits
  * Improved multi-tasking skills.
@@ -17,7 +28,8 @@ Time | Feature | Cost |
 
 
 ## Defining Our System
-### Explanation:
+### System Purpose
+The purpose of the project is to create a zone where players can spend enjoyable time playing multiple games present in it.
 
 ## SWOT ANALYSIS
 ![swot](https://user-images.githubusercontent.com/43541961/130312764-d22fce15-d5ce-4c21-b209-1716eb8148ad.jpg)
