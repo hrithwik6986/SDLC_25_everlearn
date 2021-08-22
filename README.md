@@ -1,6 +1,9 @@
 # SDLC_team25_everlearn
-                    # WELCOME TO  "GAMEZONE"
-                                        ![Banner](https://github.com/hrithwik6986/SDLC_25_everlearn/blob/main/1_Requirements/gaming.png)
+# WELCOME TO  "GAMEZONE"
+<p align="center">
+    ![Banner](https://github.com/hrithwik6986/SDLC_25_everlearn/blob/main/1_Requirements/gaming.png)
+</p>
+
 
 ## Folder Structure
 Folder                  | Description
