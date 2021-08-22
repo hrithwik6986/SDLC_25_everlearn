@@ -3,8 +3,8 @@
 
 ### Usecase Diagrams :
 ### TicTacToe
-![Usecase Diagram for Tictactoe](2_Architecture/Usecase Diagrams/Tictactoe.png)
+![Usecase Diagram for Tictactoe](Tictactoe.png)
 ### QuizGame
-![Usecase Diagram for QuizGame](2_Architecture/Usecase Diagrams/QuizGame.png)
+![Usecase Diagram for QuizGame](QuizGame.png)
 ### Hangman
-![Usecase Diagram for Hangman](2_Architecture/Usecase Diagrams/Hangman.png)
+![Usecase Diagram for Hangman](Hangman.png)
