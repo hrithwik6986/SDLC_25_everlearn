@@ -42,7 +42,7 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 |HR_01|Operating System (Windows 10)             |Implemented                  |
 |HR_02|python language                           |Implemented                  |
 |HR_03|User shall be able to play tic-tac-toe game|Implemented                 |
-|HR_04|                                          |                             |
+|HR_04|User shall be able to play quiz game      |Implemented                             |
 |HR_05|                                          |                             |
 |HR_06|                                          |                             |
 
@@ -56,3 +56,8 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 |LR_03| Alternate chances are given to the player and computer|HR_03|Implemented|
 |LR_04| After every move an updated version of the grid is displayed|HR_03|Implemented|
 |LR_05| When the game ends the final and updated grid is displayed with the winner's name|HR_03|Implemented|
+|LR_06| Rules will be displayed for quiz game|HR_04|Implemented|
+|LR_07|Lives and helpline will be displayed and updated along with each question if used|HR_04|Implemented|
+|LR_08|After each question the status of that question is displayed whether correct or incorrect along with the score|HR_04|Implemented|
+|LR_09|After the lives are over half of the amount is given to user from what they have scored|HR_04|Implemented|
+|LR_10|when all questions are answered,game ends and final amount will be given to user|HR_04|Implemented|
