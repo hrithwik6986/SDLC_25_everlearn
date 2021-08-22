@@ -50,7 +50,7 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 ## Low Level Requirements
 
 |      ID          |Description                          |High level ID|Status |                        
-|----------------|-------------------------------|-----------------------------|
+|----------------|-------------------------------|-----------------------------|------------------------------|
 |LR_01|       A 3x3 grid is displayed for tic-tac-toe                                   |HR_03|Implemented                  |
 |LR_02|          Two players, first called as X and the second O                                |HR_03|Implemented|
 |LR_03| Alternate chances are given to the players|HR_03|Implemented|
