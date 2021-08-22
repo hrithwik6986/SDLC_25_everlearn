@@ -28,7 +28,8 @@ Time | Feature | Cost |
 
 
 ## Defining Our System
-### Explanation:
+### System Purpose
+The purpose of the project is to create a zone where players can spend enjoyable time playing multiple games present in it.
 
 ## SWOT ANALYSIS
 ![swot](https://user-images.githubusercontent.com/43541961/130312764-d22fce15-d5ce-4c21-b209-1716eb8148ad.jpg)
