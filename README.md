@@ -42,12 +42,17 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 |HR_01|Operating System (Windows 10)             |Implemented                  |
 |HR_02|python language                           |Implemented                  |
 |HR_03|User shall be able to play tic-tac-toe game|Implemented                 |
+|HR_04|                                          |                             |
+|HR_05|                                          |                             |
+|HR_06|                                          |                             |
 
 
 ## Low Level Requirements
 
 |      ID          |Description                          |Status                         
 |----------------|-------------------------------|-----------------------------|
-|LR_01|                                          |Implemented                  |
-|LR_02|                                          |Implemented|
-|LR_03| 
+|LR_01|       A 3x3 grid is displayed for tic-tac-toe                                   |Implemented                  |
+|LR_02|          Two players, first called as X and the second O                                |Implemented|
+|LR_03| Alternate chances are given to the players|Implemented|
+|LR_04| After every move an updated version of the grid is displayed|Implemented|
+|LR_05| When the game ends the final and updated grid is displayed with the winner's name|Implemented|
