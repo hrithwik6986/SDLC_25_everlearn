@@ -1,4 +1,9 @@
 # Design
+### Game Zone Flowchart
+![Game Zone flowchart](https://user-images.githubusercontent.com/43541961/130364264-eed5bd66-8506-421c-b3de-513a676a0190.png)
+
+### Game Zone Component Diagram
+![Game Zone component diagram](https://user-images.githubusercontent.com/43541961/130364267-756e60c0-d7dc-4935-94ba-6a8b1bee5e4d.png)
 
 
 ### Usecase Diagrams TicTacToe
