@@ -20,6 +20,7 @@ Folder                  | Description
 SFID.  |  Name      |    Features                       |   No Test Cases|  Test Case Pass|
 -------|----------- |-----------------------------------|----------------|----------------|
        |            |                                   |                |                |
+       
 
 | Feature Id | Feature |
 | -----------|---------|
@@ -34,6 +35,14 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 
 
 # Detail Requirements
+
+## Non Functional Requiremnt 
+*
+
+## Functional Requirement 
+* GAME ZONE shall provide user with option to select the multiple game. 
+* User will be able to switch between different games.
+* Everytime user quit the any game it will be redirected to the main.
 
 ## High Level Requirements
 
