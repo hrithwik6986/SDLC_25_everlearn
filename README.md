@@ -43,7 +43,7 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 |HR_02|python language                           |Implemented                  |
 |HR_03|User shall be able to play tic-tac-toe game|Implemented                 |
 |HR_04|User shall be able to play quiz game      |Implemented                             |
-|HR_05|                                          |                             |
+|HR_05|User shall be able to play snake game     |Implemented                             |
 |HR_06|                                          |                             |
 
 
