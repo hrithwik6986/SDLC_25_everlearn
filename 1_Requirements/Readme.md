@@ -1,5 +1,6 @@
 # Requirements
-## Introduction
+## User Requirements :
+   Since the project consists of multiple games, the intended users are gamers and programmers.
 
 ### BASIC FUNCTIONS
 
