@@ -41,6 +41,8 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 |----------------|-------------------------------|-----------------------------|
 |HR_01|Operating System (Windows 10)             |Implemented                  |
 |HR_02|python language                           |Implemented                  |
+|HR_03|User shall be able to play tic-tac-toe game|Implemented                 |
+
 
 ## Low Level Requirements
 
