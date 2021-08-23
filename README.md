@@ -30,20 +30,14 @@ Folder                  | Description
 `6_ImagesAndVideos`     | Output images and videos of the project.
 
 
-## Contributors List and Summary
-
-SFID.  |  Name      |    Features                       |   No Test Cases|  Test Case Pass|
--------|----------- |-----------------------------------|----------------|----------------|
-       |            |                                   |                |                |
-       
-
-
-
 # Detail Requirements
 ## Functional Requirement 
 * GAME ZONE shall provide user with option to select the multiple game. 
 * User will be able to switch between different games.
 * Everytime user quit the any game it will be redirected to the main.
+## N0n-Functional Requiremnets
+* We require Windows along with some libraries for our project.
+* GameZone shall be  portable.
 
 ## High Level Requirements
 
