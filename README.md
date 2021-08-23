@@ -36,8 +36,6 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 
 # Detail Requirements
 
-## Non Functional Requiremnt 
-*
 
 ## Functional Requirement 
 * GAME ZONE shall provide user with option to select the multiple game. 

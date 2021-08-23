@@ -16,3 +16,10 @@ In the game of Snake, the player uses the arrow keys to move a "snake" around th
 As the snake finds food, it eats the food, and thereby grows larger. 
 The game ends when the snake either moves off the screen or moves into itself. 
 The goal is to make the snake as large as possible before that happens.
+
+# Quiz Game
+In the quiz game the player wil be known about rules of the game and the start the game.
+There will be total of 15 questions and each question has some amount,if answered correctly user can get them.
+User will have a chance of taking helpline once 
+The games ends when user answered all questions or if the lives are over user will receive half of the amount scored.
+
