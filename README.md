@@ -77,3 +77,4 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 |LR_15|Increasing the length of the snake when snake comsume the food |HR_05|Implemented|
 |LR_16|Displaying the score in the Snake game output window |HR_05|Implemented|
 |LR_17|Adding quit and continue option to the user |HR_05|Implemented|
+|LR_18| A secret word is generated|HR_05|Implemented|
