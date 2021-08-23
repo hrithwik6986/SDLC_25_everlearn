@@ -8,7 +8,7 @@
 ### Game Zone Component Diagram
 ![Game Zone component diagram](https://user-images.githubusercontent.com/43541961/130364267-756e60c0-d7dc-4935-94ba-6a8b1bee5e4d.png)
 
-|--------------------------------------------------------------------------------------------------------------------------------------|
+
 ### Usecase Diagrams TicTacToe
 ![Usecase Diagram for Tictactoe](Tictactoe.png)
 ### TicTacToe flowchart
