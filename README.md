@@ -2,6 +2,21 @@
 # WELCOME TO  "GAMEZONE"
 ![Banner](https://github.com/hrithwik6986/SDLC_25_everlearn/blob/main/1_Requirements/gaming.png)
 
+Online gaming is hugely popular with children and young
+people.From sport related games to mission based games and
+quests inspiring users to complete challenges,
+interactive games cater for a wide range of interests,
+and can enable users to link up and play together.
+Most games now have an online element to them;
+allowing users to take part in leader boards, join group
+games or chat to others. Internet connectivity in a game
+adds a new opportunity for gamers as it allows players
+to find and play against, or with, other players. These
+may be their friends or family members or even other
+users in the game from around the world.
+The main aim of this project is to develop a game for entertainment purpose.The project will have 4 diffrent game like "hang man","quiz game","tic tac toe" and "snake game".
+GAME ZONE shall provide user with option to select the multiple game. User will be able to switch between different games.Everytime user quit the any game it will be redirected to the main.
+
 
 
 ## Folder Structure
@@ -15,7 +30,7 @@ Folder                  | Description
 `6_ImagesAndVideos`     | Output images and videos of the project.
 
 
-## Contributors List 
+## Contributors List and Summary
 
 SFID.  |  Name      |    Features                       |   No Test Cases|  Test Case Pass|
 -------|----------- |-----------------------------------|----------------|----------------|
@@ -24,7 +39,7 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 
 | Feature Id | Feature                                                          |
 | -----------|------------------------------------------------------------------|
-|F_01|       | Options to choose the operation to be perform.                   |                 
+|F_01|       | options to choose the operation to be perform.                   |                 
 |F_02|       | Based on the options selected HangMan_game is performed if its 1 |            
 |F_03|       | Quiz_game is performed if it is option 2                         |
 |F_04|       | Tic-Tac-Toe is performed if it is option 3                       |
@@ -51,7 +66,7 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 
 ## Low Level Requirements
 
-|      ID          |Description                                                                                      |High level ID          |Status     |                        
+|      ID          |Description                                                                                      |High level ID          |Status |                        
 |----------------|---------------------------------------------------------------------------------------------------|-----------------------|-----------|
 |LR_01|       A 3x3 grid is displayed for tic-tac-toe                                                                |HR_03                  |Implemented|
 |LR_02|          A player and a computer, one called as X and the other as O                                         |HR_03                  |Implemented|
