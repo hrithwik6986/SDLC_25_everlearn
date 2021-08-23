@@ -24,7 +24,7 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 
 | Feature Id | Feature                                                          |
 | -----------|------------------------------------------------------------------|
-|F_01|       | options to choose the operation to be perform.|                 
+|F_01|       | options to choose the operation to be perform.                   |                 
 |F_02|       | Based on the options selected HangMan_game is performed if its 1 |            
 |F_03|       | Quiz_game is performed if it is option 2                         |
 |F_04|       | Tic-Tac-Toe is performed if it is option 3                       |
