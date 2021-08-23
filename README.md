@@ -15,7 +15,7 @@ Folder                  | Description
 `6_ImagesAndVideos`     | Output images and videos of the project.
 
 
-## Contributors List and Summary
+## Contributors List 
 
 SFID.  |  Name      |    Features                       |   No Test Cases|  Test Case Pass|
 -------|----------- |-----------------------------------|----------------|----------------|
@@ -24,7 +24,7 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 
 | Feature Id | Feature                                                          |
 | -----------|------------------------------------------------------------------|
-|F_01|       | options to choose the operation to be perform.                   |                 
+|F_01|       | Options to choose the operation to be perform.                   |                 
 |F_02|       | Based on the options selected HangMan_game is performed if its 1 |            
 |F_03|       | Quiz_game is performed if it is option 2                         |
 |F_04|       | Tic-Tac-Toe is performed if it is option 3                       |
@@ -51,7 +51,7 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 
 ## Low Level Requirements
 
-|      ID          |Description                                                                                      |High level ID          |Status |                        
+|      ID          |Description                                                                                      |High level ID          |Status     |                        
 |----------------|---------------------------------------------------------------------------------------------------|-----------------------|-----------|
 |LR_01|       A 3x3 grid is displayed for tic-tac-toe                                                                |HR_03                  |Implemented|
 |LR_02|          A player and a computer, one called as X and the other as O                                         |HR_03                  |Implemented|
