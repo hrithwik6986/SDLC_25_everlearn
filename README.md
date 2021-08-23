@@ -53,7 +53,7 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 |HR_03|User shall be able to play tic-tac-toe game|Implemented                 |
 |HR_04|User shall be able to play quiz game      |Implemented                             |
 |HR_05|User shall be able to play snake game     |Implemented                             |
-|HR_06|                                          |                             |
+|HR_06|User shall be able to play hangman game   |Implemented                        |
 
 
 ## Low Level Requirements
@@ -77,9 +77,9 @@ SFID.  |  Name      |    Features                       |   No Test Cases|  Test
 |LR_15|Increasing the length of the snake when snake comsume the food |HR_05|Implemented|
 |LR_16|Displaying the score in the Snake game output window |HR_05|Implemented|
 |LR_17|Adding quit and continue option to the user |HR_05|Implemented|
-|LR_18|Hangman: A secret word is generated|HR_05|Implemented|
-|LR_19|User is a given a chance to choose any alphabet|HR_05|Implemented|
-|LR_20|If the all the letters are guessed correctly user wins|HR_05|Implemented|
-|LR_21|If the the letters are not guessed correctly after certain attempts user loses ang=d hangman is seen|HR_05|Implemented|
-|LR_22|Adding yes or no to play the game again|HR_05|Implemented|
+|LR_18|Hangman: A secret word is generated|HR_06|Implemented|
+|LR_19|User is a given a chance to choose any alphabet|HR_06|Implemented|
+|LR_20|If the all the letters are guessed correctly user wins|HR_06|Implemented|
+|LR_21|If the the letters are not guessed correctly after certain attempts user loses ang=d hangman is seen|HR_06|Implemented|
+|LR_22|Adding yes or no to play the game again|HR_06|Implemented|
 
