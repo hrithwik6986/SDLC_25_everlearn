@@ -1,134 +1,130 @@
-
 import random
-HANGMAN_PICS = ['''
-    _ _ _
+
+hangman = ['''
+    ======
+         |
          |
          |
          |
         ===''', '''
-   _ _ _
-    O   |
-        |
-        |
-       ===''', '''
-   _ _ _
-    O   |
-    |   |
-        |
-       ===''', '''
-   _ _ _
-    O   |
-   /|   |
-        |
-       ===''', '''
-   _ _ _
-    O   |
-   /|\  |
-        |
-       ===''', '''
-   _ _ _ 
-    O   |
-   /|\  |
-   /    |
-       ===''', '''
-   _ _ _
-    O   |
-   /|\  |
-   / \  |
-       ===''']
-words = 'ant baboon badger bat bear beaver camel cat clam cobra cougar coyote crow deer dog donkey duck eagle ferret fox frog goat goose hawk lion lizard llama mole monkey moose mouse mule newt otter owl panda parrot pigeon python rabbit ram rat raven rhino salmon seal shark sheep skunk sloth snake spider stork swan tiger toad trout turkey turtle weasel whale wolf wombat zebra'.split()
+    ======
+    O    |
+         |
+         |
+         |
+        ===''', '''
+    ======
+    O    |
+    |    | 
+         |
+         |
+        ===''', '''
+    ======
+    O    |
+   /|    |
+         |
+         |
+        ===''', '''
+    ======
+    O    |
+   /|\   |
+         |
+         |
+        ===''', '''
+    ======
+    O    |
+   /|\   |
+   /     |
+         |
+        ===''', '''
+    ======
+    O    |
+   /|\   |
+   / \   | 
+         |
+        ===''']
+countries = 'algeria argentina angola austria afghanistan bulgaria bangladesh belgium brazil bolivia bhutan bahamas cambodia china chile canada cuba denmark egypt fiji finland france germany greece georgia hungary iceland india indonesia iran iraq ireland israel italy japan jamaica kuwait korea kenya libya madagascar malaysia maldives mexico mongolia mauritius nepal norway netherlands nigeria oman pakistan portugal poland qatar russia serbia somalia singapore spain sweden switzerland taiwan thailand turkey unitedkingdom ukraine venezuela vietnam yemen zambia zimbabwe'.split()
 
+def random_word(wordList):
+    index = random.randint(0, len(wordList)-1)
+    return wordList[index]
 
-def getRandomWord(wordList):
-    wordIndex = random.randint(0, len(wordList) - 1)
-    return wordList[wordIndex]
-
-
-def displayBoard(missedLetters, correctLetters, secretWord):
+def display(missed, correct, secretWord):
+    print(hangman[len(missed)])
     print()
-    print(HANGMAN_PICS[len(missedLetters)])
+    print('MISSED LETTERS: ', end=' ')
+    for i in missed:
+        print(i, end=' ')
     print()
-    print('Missed letters: ', end=' ')
-    for letter in missedLetters:
-        print(letter, end=' ')
-    print()
-    blanks = '_' * len(secretWord)
+    dash = '_' * len(secretWord)
     for i in range(len(secretWord)):
-        if secretWord[i] in correctLetters:
-            blanks = blanks[:i] + secretWord[i] + blanks[i+1:]
+        if secretWord[i] in correct:
+            dash = dash[:i] + secretWord[i] + dash[i+1:]
     # Display the secret word with spaces between the letters:
-    for letter in blanks:
-        print(letter, end=' ')
+    for i in dash:
+        print(i, end =' ')
     print()
 
-
-def getGuess(alreadyGuessed):
-    """
-    Returns the letter the player entered.
-    Ensures the player enters a single letter and nothing else.
-    """
+def get_letter(alreadyGuessed):
+    """ Returns the letter the player entered. Checks whether the player enters a single letter """
     while True:
-        print('Please guess a letter.')
-        guess = input()
-        guess = guess.lower()
-        if len(guess) != 1:
-            print('Only a single letter is allowed.')
-        elif guess in alreadyGuessed:
-            print('You have already guessed that letter. Choose again.')
-        elif guess not in 'abcdefghijklmnopqrstuvwxyz':
-            print('Please enter a letter from the alphabet.')
+        print('GUESS A LETTER: ')
+        l = input()
+        l = l.lower()
+        if len(l) != 1:
+            print('Enter single letter only.')
+        elif l in alreadyGuessed:
+            print('You have already guessed that letter. Try again')
+        elif l not in 'abcdefghijklmnopqrstuvwxyz':
+            print('Please enter only alphabet.')
         else:
-            return guess
-
+            return l
 
 def playAgain():
-    """
-    Returns True if the player wants to play again, False otherwise.
-    """
-    print('Would you like to play HangMan again? (y)es or (n)o')
+    """ Returns True if the player wants to play again, False otherwise """
+    print('\nWOULD YOU LIKE TO PLAY AGAIN? Press y for yes and n for no')
     return input().lower().startswith('y')
 
+print('=======================================')
+print('		WELCOME TO HANGMAN GAME		')
+print('=======================================')
+print()
+print(  'GUESS THE COUNTRY')
+missed = ''
+correct = ''
+secretWord = random_word(countries)
+gameOver = False
 
-# Now for the game itself:
+while True:
+    display(missed, correct, secretWord)
+    # Let the player enter a letter:
+    l = get_letter(missed + correct)
 
-
-def gamePlay():
-    print('|_H_A_N_G_M_A_N_|')
-    missedLetters = ''
-    correctLetters = ''
-    secretWord = getRandomWord(words)
-    gameIsDone = False
-    while True:
-        displayBoard(missedLetters, correctLetters, secretWord)
-        # Let the player enter a letter:
-        guess = getGuess(missedLetters + correctLetters)
-        if guess in secretWord:
-            correctLetters = correctLetters + guess
-            # Check to see if the player has won:
-            foundAllLetters = True
-            for i in range(len(secretWord)):
-                if secretWord[i] not in correctLetters:
-                    foundAllLetters = False
-                    break
-            if foundAllLetters:
-                print('You guessed it!')
-                print('The secret word is "' + secretWord + '"! You win!')
-                gameIsDone = True
-        else:
-            missedLetters = missedLetters + guess
-            # Check if the player has guessed too many times and lost.
-            if len(missedLetters) == len(HANGMAN_PICS) - 1:
-                displayBoard(missedLetters, correctLetters, secretWord)
-                print('You have run out of guesses!\nAfter ' + str(len(missedLetters)) + ' missed guesses and ' +
-                      str(len(correctLetters)) + ' correct guesses, the word was "' + secretWord + '"')
-                gameIsDone = True
-        # If the game is done, ask the player to try again.
-        if gameIsDone:
-            if playAgain():
-                missedLetters = ''
-                correctLetters = ''
-                gameIsDone = False
-                secretWord = getRandomWord(words)
-            else:
-                print("Thanks for playing Hangman")
+    if l in secretWord:
+        correct = correct + l
+        # Check to see if the player has won:
+        foundAllLetters = True
+        for i in range(len(secretWord)):
+            if secretWord[i] not in correct:
+                foundAllLetters = False
                 break
+        if foundAllLetters:
+            print('You guessed it!')
+            print('The secret word is "' + secretWord + '"! You win!')
+            gameOver = True
+    else:
+        missed = missed + l
+        # Check if the player has guessed too many times and lost.
+        if len(missed) == len(hangman) -1:
+            display(missed, correct, secretWord)
+            print('You have run out of guesses!!!\nAfter ' + str(len(missed)) + ' missed guesses and ' + str(len(correct)) + ' correct guesses, the word was "' + secretWord + '"')
+            gameOver = True
+    # If the game is over, ask the player to try again.
+    if gameOver:
+        if playAgain():
+            missed = ''
+            correct = ''
+            gameOver = False
+            secretWord = random_word(countries)
+        else:
+            break
