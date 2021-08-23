@@ -27,6 +27,7 @@ def winner(bot, alpha):
             (bot[1] == alpha and bot[5] == alpha and bot[9] == alpha) or
             (bot[3] == alpha and bot[5] == alpha and bot[7] == alpha))
 
+
 def user_move():
     run = True
     while run:
@@ -49,7 +50,8 @@ def user_move():
 
 
 def computer_move():
-    possible_moves = [x for x, alphabet in enumerate(board) if alphabet == ' ' and x != 0]
+    possible_moves = [x for x, alphabet in enumerate(
+        board) if alphabet == ' ' and x != 0]
     move = 0
     for alphabet in ['o', 'x']:
         for i in possible_moves:
@@ -76,43 +78,41 @@ def computer_move():
         move = select_random(edges)
     return move
 
+
 def select_random(li):
- import random
- ln = len(li)
- r = random.randrange(0, ln)
- return li[r]
+    import random
+    ln = len(li)
+    r = random.randrange(0, ln)
+    return li[r]
 
 
 def board_full(board):
- if board.count(" ") > 1:
-    return False
- else:
-    return True
-
-
-def main():
- print("WELCOME TO TIC TAC TOE!!!")
- print_board(board)
- while not(board_full(board)):
-    if not(winner(board, "o")):
-        user_move()
-        print_board(board)
+    if board.count(" ") > 1:
+        return False
     else:
-        print("Sorry, computer won the game!!!")
-        break
-    if not(winner(board, "x")):
-        move = computer_move()
-        if move == 0:
-            print("Tie game")
-        else:
-            insert_alphabet("o", move)
-            print("Computer placed an 'o' in position", move, ":")
+        return True
+
+
+def gamePlay():
+    print("WELCOME TO TIC TAC TOE!!!")
+    print_board(board)
+    while not(board_full(board)):
+        if not(winner(board, "o")):
+            user_move()
             print_board(board)
-    else:
-        print("Congo!!!!!!!! you won the game")
-        break
-    if board_full(board):
-        print("Tie game")
-
-
-main()
+        else:
+            print("Sorry, computer won the game!!!")
+            break
+        if not(winner(board, "x")):
+            move = computer_move()
+            if move == 0:
+                print("Tie game")
+            else:
+                insert_alphabet("o", move)
+                print("Computer placed an 'o' in position", move, ":")
+                print_board(board)
+        else:
+            print("Congratulations!!!  you Won the game")
+            break
+        if board_full(board):
+            print("Tie game")
