@@ -75,3 +75,44 @@ def computer_move():
     if len(edges) > 0:
         move = select_random(edges)
     return move
+
+def select_random(li):
+ import random
+ ln = len(li)
+ r = random.randrange(0, ln)
+ return li[r]
+
+
+def board_full(board):
+ if board.count(" ") > 1:
+ return False
+ else:
+ return True
+
+
+def main():
+ print("WELCOME TO TIC TAC TOE!!!")
+ print_board(board)
+ while not(board_full(board)):
+ if not(winner(board, "o")):
+ user_move()
+ print_board(board)
+ else:
+ print("Sorry, computer won the game!!!")
+ break
+ if not(winner(board, "x")):
+ move = computer_move()
+ if move == 0:
+ print("Tie game")
+ else:
+ insert_alphabet("o", move)
+ print("Computer placed an 'o' in position", move, ":")
+ print_board(board)
+ else:
+ print("Congo!!!!!!!! you won the game")
+ break
+ if board_full(board):
+ print("Tie game")
+
+
+main()
