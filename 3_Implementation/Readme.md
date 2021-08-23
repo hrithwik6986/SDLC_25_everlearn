@@ -10,3 +10,9 @@ The challenge for the other player is to block the game for their opponent and a
 Hangman is a popular word guessing game where the player attempts to build a missing word by guessing one letter at a time.
 After a certain number of incorrect guesses, the  game ends and the player loses.
 The game also ends if the player correctly identifies all the letters of the missing word.
+
+# Snake Game
+In the game of Snake, the player uses the arrow keys to move a "snake" around the board.
+As the snake finds food, it eats the food, and thereby grows larger. 
+The game ends when the snake either moves off the screen or moves into itself. 
+The goal is to make the snake as large as possible before that happens.
