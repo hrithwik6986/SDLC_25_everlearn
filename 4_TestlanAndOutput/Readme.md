@@ -34,17 +34,17 @@
   LR08 | HR07 | Lives status | User option | Displays the lives and helpline left |  | Requirement 
   LR09 | HR08 | All lives are over | Key press | 'Game over' message with final amount scored |  | Requirement
   LR10 | HR08 | All questions are done | Key press | 'Game over' message with final amount scored |  | Requirement
-  LR11 | HR05 | User play again | Key press | User continue or quit playing |  | Requirement
+  LR11 | HR08 | User play again | Key press | User continue or quit playing |  | Requirement
   LR12 | HR09 | Tictactoe grid  designed | Key press | A empty 3x3 grid created for tictactoe |  | Requirement
   LR13 | HR09 | Grid update | key press | The grid updated and displayed after every move |  | Requirement
   LR14 | HR10 | User play | Number from positions 1-9 which is remaining  | X placed at user given position |  | Requirement
   LR15 | HR10 | Computer play | Number from positions 1-9 which is remaining  | O placed at selected position |  | Requirement
   LR16 | HR11 | User wins | Key press | 'User won' message shown |  | Requirement
   LR17 | HR11 | Computer wins | Key press | 'Computer won' message shown |  | Requirement
-  LR18 | HR05 | User play again | Key press | User continue or quit playing |  | Requirement
+  LR18 | HR11 | User play again | Key press | User continue or quit playing |  | Requirement
   LR19 | HR12 | GUI design | Length and width for the frame | GUI frame created |  | Requirement
   LR20 | HR13 | Snake head coordinate change | Arrow keys for movement | Snake movement in the specified direction |  | Requirement
   LR21 | HR14 | Snake reaches maximum length | Key press | 'User wins' message |  | Requirement
   LR22 | HR15 | Snake hits itself | Key press | 'Game over' message with scores |  | Requirement
   LR23 | HR15 | Snake hits wall | Key press | 'Game over' message with scores |  | Requirement
-  LR24 | HR05 | User play again | Key press | User continue or quit playing |  | Requirement
+  LR24 | HR15 | User play again | Key press | User continue or quit playing |  | Requirement
