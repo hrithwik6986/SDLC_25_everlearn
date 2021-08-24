@@ -18,7 +18,7 @@
  HR12 | Snake GUI | Key press | GUI opened properly |  | Technical
  HR13 | Snake movement | Key press | Snake moved in correct direction |  | Technical
  HR14 | Snake growth | Key press | Length of snake increased when hits the cube |  | Technical
- HR16 | Snake game complete | Key press | 'Game completed' message with the score shown |  | Technical
+ HR15 | Snake game complete | Key press | 'Game completed' message with the score shown |  | Technical
 
  ### Low Level Test Plan
 
@@ -34,3 +34,9 @@
   LR08 | HR07 | Lives status | User option | Displays the lives and helpline left |  | Requirement 
   LR09 | HR08 | All lives are over | Key press | 'Game over' message with final amount scored |  | Requirement
   LR10 | HR08 | All questions are done | Key press | 'Game over' message with final amount scored |  | Requirement
+  LR11 | HR09 | Tictactoe grid  designed | Key press | A empty 3x3 grid created for tictactoe |  | Requirement
+  LR12 | HR09 | Grid update | key press | The grid updated and displayed after every move |  | Requirement
+  LR13 | HR10 | User play | Number from positions 1-9 which is remaining  | X placed at user given position |  | Requirement
+  LR14 | HR10 | Computer play | Number from positions 1-9 which is remaining  | O placed at selected position |  | Requirement
+  LR15 | HR11 | User wins | Key press | 'User won' message shown |  | Requirement
+  LR16 | HR11 | computer wins | Key press | 'Computer won' message shown |  | Requirement 
