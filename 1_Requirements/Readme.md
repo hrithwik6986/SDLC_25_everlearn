@@ -8,7 +8,7 @@
 * GAME ZONE shall provide user with option to select the multiple game. 
 * User will be able to switch between different games.
 * Everytime user quit the any game it will be redirected to the main.
-## N0n-Functional Requiremnets
+## Non-Functional Requiremnets
 * We require Windows along with some libraries for our project.
 * GameZone shall be  portable.
 
