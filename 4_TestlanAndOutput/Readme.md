@@ -26,7 +26,7 @@
   --- | ------ | ------------ | -------------- | --------------- | ------ | ---------
   LR01 | HR01 | Requirements setup | System setup | Setup Success | PASS | Scenario 
   LR02 | HR03 | Choose correct letter | Input letter | Part of word formed with the letter | PASS | Requirement
-  LR03 | HR03 | Choose wrong letter | Input letter | A part of hangman formed |  | Requirement
+  LR03 | HR03 | Choose wrong letter | Input letter | A part of hangman formed | PASS | Requirement
   LR04 | HR05 | Check number of attempts | Key press | Maximum number of attempts reached and hangman formed completely | PASS | Requirement
   LR05 | HR05 | User play again | Key press | User continue or quit playing | PASS | Requirement
   LR06 | HR06 | Rules for quiz | Key press | User accepts or rejects the rules | PASS | Requirement
