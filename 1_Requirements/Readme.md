@@ -12,7 +12,7 @@
  * Maintainability 
    Project will be open source. This will provide maintainability by other developers, even if the project group stops working.
  * Portability
-   The prject shall be portable through linux systems too.
+   The project shall be portable through linux systems too.
 
 ### Performance Requirement
    Artificial intelligence has to make decisions quick enough for fluent game playability.
@@ -21,7 +21,10 @@
  * Improved multi-tasking skills.
 
 ## Cost and Features
-Time | Feature | Cost | 
+Time    | Feature | Cost | 
+Past    | Offline mode of playing games | Earlier cost is less just once we need to buy the game in physical form once |
+Present | Most games can be played online with friends/family | Now we need to pay for internet and also some games are paid and may require in-game purchases |
+Future  | Online games with advanced features such that we feel we are playing offline | Cost will be higher for playing games with advanced graphics |
 
 
 
