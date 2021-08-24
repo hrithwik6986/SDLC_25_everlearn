@@ -1,6 +1,6 @@
 from random import randint
 import hang_man,KBC,snakegame,ticTacToe
-import json,random,pygame
+import json,random,pygame,os
 from io import StringIO
 
 def test_random_word():
@@ -257,6 +257,7 @@ def test_quiz_answers_wrong(monkeypatch):
         assert True
 
 def test_snake_move_left(monkeypatch):
+    os.environ['SDL_VIDEODRIVER']='windlib'
     monkeypatch.setattr('sys.stdin',pygame.K_LEFT)
     pygame.init()
     dis_width = 600
