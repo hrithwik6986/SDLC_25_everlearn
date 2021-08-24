@@ -68,3 +68,43 @@ def test_play_again_hangman(monkeypatch):
     playopt=StringIO('y\n')
     monkeypatch.setattr('sys.stdin', playopt)
     assert hang_man.playAgain()
+
+def test_empty_grid(capsys):
+    grid=" " + ticTacToe.board[1] + "| " + ticTacToe.board[2] + "| " + ticTacToe.board[3]+'\n'+ "---------"+'\n'+ " " + ticTacToe.board[4] + "| " + ticTacToe.board[5] + "| " + ticTacToe.board[6]+"\n"+"---------"+'\n'+ " " + ticTacToe.board[7] + "| " + ticTacToe.board[8] + "| " + ticTacToe.board[9]+"\n"
+    ticTacToe.print_board(ticTacToe.board)
+    captured_stdout, captured_stderr = capsys.readouterr()
+    assert captured_stdout==grid
+
+def test_upgrade_grid(monkeypatch,capsys):
+    grid=" " + ticTacToe.board[1] + "| " + ticTacToe.board[2] + "| " + ticTacToe.board[3]+'\n'+ "---------"+'\n'+ " " + ticTacToe.board[4] + "| " + ticTacToe.board[5] + "| " + ticTacToe.board[6]+"\n"+"---------"+'\n'+ " " + ticTacToe.board[7] + "| " + ticTacToe.board[8] + "| " + ticTacToe.board[9]+"\n"
+    usermove=StringIO('1\n')
+    monkeypatch.setattr('sys.stdin', usermove)
+    ticTacToe.user_move()
+    ticTacToe.print_board(ticTacToe.board)
+    captured_stdout, captured_stderr = capsys.readouterr()
+    assert captured_stdout!=grid
+
+def test_user_play(monkeypatch):
+    gridmov=[' ' for i in range(10)]
+    usermove=StringIO('2\n')
+    monkeypatch.setattr('sys.stdin', usermove)
+    ticTacToe.user_move()
+    assert gridmov!=ticTacToe.board
+
+def test_computer_play(monkeypatch):
+    gridmov=[' ' for i in range(10)]
+    gridmov[1]='x'
+    ticTacToe.insert_alphabet('x',1)
+    comp_move=ticTacToe.computer_move()
+    ticTacToe.insert_alphabet('o',comp_move)
+    assert gridmov!=ticTacToe.board
+
+def test_board_full():
+    assert ticTacToe.board_full([' ','x','o','x','x','o','x','o','x','o'])
+
+def test_user_win():
+    assert ticTacToe.winner([' ','x','o',' ','o','x',' ','o',' ','x'],'x')
+
+def test_comp_win():
+    assert ticTacToe.winner([' ','o','x',' ','o','x',' ','o',' ','x'],'o')
+
