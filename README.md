@@ -43,7 +43,7 @@ No.|Challenges| Solution
 
 Folder                  | Contribution
 ------------------------| -----------------------------------------
-`1_Requirements`        | Siri Satwika  Kotha,Mudunuri  Meghana,Aishwarya  S,Tai Ravali Sri,Jeevan J Acharya,Navaneeth  M,T N  Sneha,Hrithwik Sridhar Bharadwaj..
+`1_Requirements`        | Siri Satwika  Kotha,Mudunuri  Meghana,Aishwarya  S,Tai Ravali Sri,Jeevan J Acharya,Navaneeth  M,T N  Sneha,Hrithwik Sridhar Bharadwaj,Anjali Rajendra Nayak
 `2_Architecture`        | Jeevan J Acharya , Navaneeth M.
 `3_Implementation`      | Akash  M,Siri Satwika  Kotha,Mudunuri  Meghana,Aishwarya  S,Kakani  Uthej,Anjali Rajendra Nayak,Tai Ravali Sri,Jeevan J Acharya,Navaneeth  M,T N  Sneha,Hrithwik Sridhar Bharadwaj.
 `4_Test_planAndOutput`  | Akash M.
