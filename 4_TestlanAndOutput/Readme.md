@@ -39,4 +39,9 @@
   LR13 | HR10 | User play | Number from positions 1-9 which is remaining  | X placed at user given position |  | Requirement
   LR14 | HR10 | Computer play | Number from positions 1-9 which is remaining  | O placed at selected position |  | Requirement
   LR15 | HR11 | User wins | Key press | 'User won' message shown |  | Requirement
-  LR16 | HR11 | computer wins | Key press | 'Computer won' message shown |  | Requirement 
+  LR16 | HR11 | Computer wins | Key press | 'Computer won' message shown |  | Requirement
+  LR17 | HR12 | GUI design | Length and width for the frame | GUI frame created |  | Requirement
+  LR18 | HR13 | Snake head coordinate change | Arrow keys for movement | Snake movement in the specified direction |  | Requirement
+  LR19 | HR15 | Snake hits itself | Key press | 'Game over' message with scores |  | Requirement
+  LR20 | HR15 | Snake hits wall | Key press | 'Game over' message with scores |  | Requirement
+  LR21 | HR16 | Snake reaches maximum length | Key press | 'User wins' message |  | Requirement
