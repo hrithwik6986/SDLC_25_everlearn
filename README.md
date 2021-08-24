@@ -41,7 +41,7 @@ No.|Challenges| Solution
 
 ## Work Division 
 
-Folder                  | Description
+Folder                  | Contribution
 ------------------------| -----------------------------------------
 `1_Requirements`        | Siri Satwika  Kotha,Mudunuri  Meghana,Aishwarya  S,Tai Ravali Sri,Jeevan J Acharya,Navaneeth  M,T N  Sneha,Hrithwik Sridhar Bharadwaj..
 `2_Architecture`        | Jeevan J Acharya , Navaneeth M.
