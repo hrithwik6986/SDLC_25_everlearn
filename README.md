@@ -36,8 +36,8 @@ Folder                  | Description
 ## Challenges Faced
 No.   |Challenges                               | Solution
 ------|-----------------------------------------|-----------------------------------------
-1.    |Implementing Unit test cases             | Learnt the testing and implemented
-2.    |Build badge                              | Gone through all documentation related to github badges
+| 1.    |Implementing Unit test cases             | Learnt the testing and implemented
+| 2.    |Build badge                              | Gone through all documentation related to github badges
 
 ## Work Division 
 
