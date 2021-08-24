@@ -11,7 +11,11 @@
  HR05 | User loses if all letters are not guessed correctly after some attempts | Input letter | 'User loses' message shown |  | Technical
  HR06 | Rules for quiz | Key Press | Quiz rules displayed to the user |  | Technical
  HR07 | Status of question answered | User option | Correct or Incorrect answer with amount displayed |  | Technical
- HR08 | Check if game over | User option | 'Game finished' message shown with final amount obtained |  | Technical
+ HR08 | Check if quiz game over | User option | 'Game finished' message shown with final amount obtained |  | Technical
  HR09 | Grid for TicTacToe | Key Press | Grid displayed for the game |  | Technical
  HR10 | User and Computer play | Key Press | User and computer play alternatively with X and O |  | Technical
- HR11 | Game complete | Key Press | Game ends with the winner name displayed |  | Technical
+ HR11 | Tictactoe Game complete | Key Press | Game ends with the winner name displayed |  | Technical
+ HR12 | Snake GUI | Key Press | GUI opened properly |  | Technical
+ HR13 | Snake movement | Key Press | Snake moved in correct direction |  | Technical
+ HR14 | Snake growth | Key Press | Length of snake increased when hits the cube |  | Technical
+ HR16 | Snake game complete | Key Press | 'Game completed' message with the score shown |  | Technical
