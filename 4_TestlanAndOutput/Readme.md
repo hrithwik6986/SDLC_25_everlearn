@@ -19,3 +19,9 @@
  HR13 | Snake movement | Key Press | Snake moved in correct direction |  | Technical
  HR14 | Snake growth | Key Press | Length of snake increased when hits the cube |  | Technical
  HR16 | Snake game complete | Key Press | 'Game completed' message with the score shown |  | Technical
+
+ ### Low Level Test Plan
+
+  ID  | HLT ID | Description  | Expected Input | Expected Output | Status | Test Type
+  --- | ------ | ------------ | -------------- | --------------- | ------ | ---------
+  
