@@ -257,7 +257,7 @@ def test_quiz_answers_wrong(monkeypatch):
         assert True
 
 def test_snake_move_left(monkeypatch):
-    os.environ['SDL_VIDEODRIVER']='windlib'
+    os.environ['SDL_VIDEODRIVER']='dummy'
     monkeypatch.setattr('sys.stdin',pygame.K_LEFT)
     pygame.init()
     dis_width = 600
