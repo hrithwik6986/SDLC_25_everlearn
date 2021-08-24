@@ -21,13 +21,13 @@
  * Improved multi-tasking skills.
 
 ## Cost and Features
-Time    | Feature | Cost | 
---------------------------
-Past    | Offline mode of playing games | Earlier cost is less just once we need to buy the game in physical form once |
+Time | Feature | Cost 
+---- | ------- | ----
+Past    | Offline mode of playing games | Earlier cost is less just once we need to buy the game in physical form once 
 
-Present | Most games can be played online with friends/family | Now we need to pay for internet and also some games are paid and may require in-game purchases |
+Present | Most games can be played online with friends/family | Now we need to pay for internet and also some games are paid and may require in-game purchases 
 
-Future  | Online games with advanced features such that we feel we are playing offline | Cost will be higher for playing games with advanced graphics |
+Future  | Online games with advanced features such that we feel we are playing offline | Cost will be higher for playing games with advanced graphics 
 
 
 
