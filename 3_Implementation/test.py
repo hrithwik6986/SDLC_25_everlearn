@@ -117,16 +117,16 @@ def test_display_lives(capsys):
     assert captured_stdout==lives_helpline
 
 def test_quiz_answers_correct(monkeypatch):
-    with open("data/questions.json") as file:
+    with open("./3_Implementation/data/questions.json") as file:
         data = file.read()
         questionsDict = json.loads(data)
-    with open("data/options.json") as file:
+    with open("./3_Implementation/data/options.json") as file:
         data = file.read()
         optionsDict = json.loads(data)
-    with open("data/answers.json") as file:
+    with open("./3_Implementation/data/answers.json") as file:
         data = file.read()
         answersDict = json.loads(data)
-    with open("data/rewards.json") as file:
+    with open("./3_Implementation/data/rewards.json") as file:
         data = file.read()
         rewardsDict = json.loads(data)
     lives = 3
@@ -185,16 +185,16 @@ def test_quiz_answers_correct(monkeypatch):
     assert True
 
 def test_quiz_answers_wrong(monkeypatch):
-    with open("data/questions.json") as file:
+    with open("./3_Implementation/data/questions.json") as file:
         data = file.read()
         questionsDict = json.loads(data)
-    with open("data/options.json") as file:
+    with open("./3_Implementation/data/options.json") as file:
         data = file.read()
         optionsDict = json.loads(data)
-    with open("data/answers.json") as file:
+    with open("./3_Implementation/data/answers.json") as file:
         data = file.read()
         answersDict = json.loads(data)
-    with open("data/rewards.json") as file:
+    with open("./3_Implementation/data/rewards.json") as file:
         data = file.read()
         rewardsDict = json.loads(data)
     lives = 3
@@ -256,62 +256,31 @@ def test_quiz_answers_wrong(monkeypatch):
     else:
         assert True
 
-def test_gui():
-    dis_width = 600
-    dis_height = 400
-    dis = pygame.display.set_mode((dis_width, dis_height))
-    assert dis!=None
-
-def test_snake():
-    dis_width = 600
-    dis_height = 400
-    dis = pygame.display.set_mode((dis_width, dis_height))
-    snake_block=10
-    snake_list=[[10,11],[10,12]]
-    for x in snake_list:
-        pygame.draw.rect(dis,(0,0,0), [x[0], x[1], snake_block, snake_block])
-    assert dis!=None
-
 def test_snake_move_left(monkeypatch):
-    dis_width = 600
-    dis_height = 400
-    dis = pygame.display.set_mode((dis_width, dis_height))
     monkeypatch.setattr('sys.stdin',pygame.K_LEFT)
     snake_block=10
     if pygame.event.get()==pygame.K_LEFT:
         assert (snake_block-1,snake_block)==(9,10)
 
 def test_snake_move_right(monkeypatch):
-    dis_width = 600
-    dis_height = 400
-    dis = pygame.display.set_mode((dis_width, dis_height))
     monkeypatch.setattr('sys.stdin',pygame.K_RIGHT)
     snake_block=10
     if pygame.event.get()==pygame.K_RIGHT:
         assert (snake_block+1,snake_block)==(11,10)
 
 def test_snake_move_up(monkeypatch):
-    dis_width = 600
-    dis_height = 400
-    dis = pygame.display.set_mode((dis_width, dis_height))
     monkeypatch.setattr('sys.stdin',pygame.K_UP)
     snake_block=10
     if pygame.event.get()==pygame.K_UP:
         assert (snake_block,snake_block-1)==(10,9)
 
 def test_snake_move_down(monkeypatch):
-    dis_width = 600
-    dis_height = 400
-    dis = pygame.display.set_mode((dis_width, dis_height))
     monkeypatch.setattr('sys.stdin',pygame.K_DOWN)
     snake_block=10
     if pygame.event.get()==pygame.K_DOWN:
         assert (snake_block,snake_block+1)==(10,11)
 
 def test_snake_length(monkeypatch):
-    dis_width = 600
-    dis_height = 400
-    dis = pygame.display.set_mode((dis_width, dis_height))
     monkeypatch.setattr('sys.stdin',pygame.K_RIGHT)
     snake_block=10
     snake_length=1
