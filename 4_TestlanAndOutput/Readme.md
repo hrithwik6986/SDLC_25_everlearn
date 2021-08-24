@@ -1,1 +1,11 @@
+## Test Plan and Output
+
+### Hangman
+
+| ID  | Description  | Expected Input  | Expected_Output  |
+| --- | ------------ | --------- | ------- |
+| HR01| Random string is taken | String is picked from the set of string randomly | string is got |
+| HR02| guessing of the letters | input letter | only letter is accepted |
+| HR03| if letter not in string | input letter | hangman each part is seen for each wrong letter |
+| HR04| if letter in string | input letter | letter is filled in its place in the string |
 
