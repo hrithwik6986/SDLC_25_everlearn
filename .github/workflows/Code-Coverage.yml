@@ -26,6 +26,6 @@ jobs:
     - name: Install gcov 
       run: sudo apt -y install gcovr
     - name: make coverage
-      run: make -C 3.Implementation/ main.py
+      run: make -C 3_Implementation/ main.py
     - name: GCov only
       run:  gcovr -r .
