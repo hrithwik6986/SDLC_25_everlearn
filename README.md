@@ -21,7 +21,7 @@ GAME ZONE shall provide user with option to select the multiple game. User will 
 code quality|
 ------------|
 [![Flake8](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml)|
-https://img.shields.io/gitlab/coverage/hrithwik6986/SDLC_25_everlearn/master?style=flat-square
+
 
 
 
