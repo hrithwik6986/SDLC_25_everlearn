@@ -14,8 +14,8 @@ adds a new opportunity for gamers as it allows players
 to find and play against, or with, other players. These
 may be their friends or family members or even other
 users in the game from around the world.
-The main aim of this project is to develop a game for entertainment purpose.The project will have 4 diffrent game like "hang man","quiz game","tic tac toe" and "snake game".
-GAME ZONE shall provide user with option to select the multiple game. User will be able to switch between different games.Everytime user quit the any game it will be redirected to the main.
+The main aim of this project is to develop a game for entertainment purpose.The project will have 4 different games like "hang man","quiz game","tic tac toe" and "snake game".
+GAME ZONE shall provide user with option to select the game. User will be able to switch between different games.Everytime user quit any game it will be redirected to the main.
 
 
 code quality|Build|Git Inspector|Code-Coverage|
