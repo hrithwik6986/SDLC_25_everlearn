@@ -271,3 +271,51 @@ def test_snake():
     for x in snake_list:
         pygame.draw.rect(dis,(0,0,0), [x[0], x[1], snake_block, snake_block])
     assert dis!=None
+
+def test_snake_move_left(monkeypatch):
+    dis_width = 600
+    dis_height = 400
+    dis = pygame.display.set_mode((dis_width, dis_height))
+    monkeypatch.setattr('sys.stdin',pygame.K_LEFT)
+    snake_block=10
+    if pygame.event.get()==pygame.K_LEFT:
+        assert (snake_block-1,snake_block)==(9,10)
+
+def test_snake_move_right(monkeypatch):
+    dis_width = 600
+    dis_height = 400
+    dis = pygame.display.set_mode((dis_width, dis_height))
+    monkeypatch.setattr('sys.stdin',pygame.K_RIGHT)
+    snake_block=10
+    if pygame.event.get()==pygame.K_RIGHT:
+        assert (snake_block+1,snake_block)==(11,10)
+
+def test_snake_move_up(monkeypatch):
+    dis_width = 600
+    dis_height = 400
+    dis = pygame.display.set_mode((dis_width, dis_height))
+    monkeypatch.setattr('sys.stdin',pygame.K_UP)
+    snake_block=10
+    if pygame.event.get()==pygame.K_UP:
+        assert (snake_block,snake_block-1)==(10,9)
+
+def test_snake_move_down(monkeypatch):
+    dis_width = 600
+    dis_height = 400
+    dis = pygame.display.set_mode((dis_width, dis_height))
+    monkeypatch.setattr('sys.stdin',pygame.K_DOWN)
+    snake_block=10
+    if pygame.event.get()==pygame.K_DOWN:
+        assert (snake_block,snake_block+1)==(10,11)
+
+def test_snake_length(monkeypatch):
+    dis_width = 600
+    dis_height = 400
+    dis = pygame.display.set_mode((dis_width, dis_height))
+    monkeypatch.setattr('sys.stdin',pygame.K_RIGHT)
+    snake_block=10
+    snake_length=1
+    foodx,foody=11,10
+    if pygame.event.get()==pygame.K_RIGHT:
+        if (snake_block+1,snake_block)==(foodx,foody):
+            assert (snake_length+1)==2
