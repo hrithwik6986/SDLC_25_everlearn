@@ -1,4 +1,5 @@
 # Design
+### High Level Design
 ### Game Zone Flowchart
 ![Game Zone flowchart](https://user-images.githubusercontent.com/43541961/130364264-eed5bd66-8506-421c-b3de-513a676a0190.png)
 
@@ -8,16 +9,18 @@
 ### Game Zone Component Diagram
 ![Game Zone component diagram](https://user-images.githubusercontent.com/43541961/130364267-756e60c0-d7dc-4935-94ba-6a8b1bee5e4d.png)
 
-
 ### Game Zone Sequence Diagram
 ![Game Zone Sequence diagram](https://user-images.githubusercontent.com/43541961/130579479-73784732-50a3-4662-9c2f-049ccf036809.png)
 
+### Game Zone Class Diagram
+![Game Zone Class diagram](https://user-images.githubusercontent.com/43541961/130604777-d3962c42-5dcb-4001-abf9-c15674ec30c0.png)
 
+
+### Low Level Design
 ### Usecase Diagrams TicTacToe
 ![Usecase Diagram for Tictactoe](Tictactoe.png)
 ### TicTacToe flowchart
 ![Tictactoe flowchart](https://user-images.githubusercontent.com/43541961/130364475-8ef3cfde-d192-4241-af4b-cdb68e41b282.png)
-
 
 ### Usecase Diagrams QuizGame 
 ![Usecase Diagram for QuizGame](QuizGame.png)
