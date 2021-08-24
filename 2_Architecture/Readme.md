@@ -9,6 +9,10 @@
 ![Game Zone component diagram](https://user-images.githubusercontent.com/43541961/130364267-756e60c0-d7dc-4935-94ba-6a8b1bee5e4d.png)
 
 
+### Game Zone Sequence Diagram
+![Game Zone Sequence diagram](https://user-images.githubusercontent.com/43541961/130579479-73784732-50a3-4662-9c2f-049ccf036809.png)
+
+
 ### Usecase Diagrams TicTacToe
 ![Usecase Diagram for Tictactoe](Tictactoe.png)
 ### TicTacToe flowchart
