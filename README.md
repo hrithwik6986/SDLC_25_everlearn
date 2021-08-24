@@ -18,9 +18,9 @@ The main aim of this project is to develop a game for entertainment purpose.The 
 GAME ZONE shall provide user with option to select the game. User will be able to switch between different games.Everytime user quit any game it will be redirected to the main.
 
 
-code quality|Build|Git Inspector|Code-Coverage|
-------------|-----|-------------|-------------|
-[![Flake8](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml)|[![CI build status](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/main.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/main.yml)|[![Contribution Check - Git Inspector](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/Contribution%20Check-Git%20Inspector.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/Contribution%20Check-Git%20Inspector.yml)|[![Code-Coverage](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/Code-Coverage.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/Code-Coverage.yml)
+code quality|Build|Git Inspector|Code-Coverage|PyTest
+------------|-----|-------------|-------------|------
+[![Flake8](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml)|[![CI build status](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/main.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/main.yml)|[![Contribution Check - Git Inspector](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/Contribution%20Check-Git%20Inspector.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/Contribution%20Check-Git%20Inspector.yml)|[![Code-Coverage](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/Code-Coverage.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/Code-Coverage.yml)|[![python-test](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/python-test.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/python-test.yml)
 
 
 
