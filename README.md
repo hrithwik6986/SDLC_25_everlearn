@@ -18,9 +18,9 @@ The main aim of this project is to develop a game for entertainment purpose.The 
 GAME ZONE shall provide user with option to select the multiple game. User will be able to switch between different games.Everytime user quit the any game it will be redirected to the main.
 
 
-code quality|
-------------|
-[![Flake8](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml)|
+code quality|Build|
+------------|-----|
+[![Flake8](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/flake8.yml)|[![CI build status](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/main.yml/badge.svg)](https://github.com/hrithwik6986/SDLC_25_everlearn/actions/workflows/main.yml)|
 
 
 
