@@ -258,6 +258,10 @@ def test_quiz_answers_wrong(monkeypatch):
 
 def test_snake_move_left(monkeypatch):
     monkeypatch.setattr('sys.stdin',pygame.K_LEFT)
+    pygame.init()
+    dis_width = 600
+    dis_height = 400
+    dis = pygame.display.set_mode((dis_width, dis_height))
     snake_block=10
     if pygame.event.get()==pygame.K_LEFT:
         assert (snake_block-1,snake_block)==(9,10)
