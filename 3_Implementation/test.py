@@ -1,4 +1,6 @@
+from random import randint
 import hang_man,KBC,snakegame,ticTacToe
+import json,random,pygame
 from io import StringIO
 
 def test_random_word():
@@ -108,3 +110,164 @@ def test_user_win():
 def test_comp_win():
     assert ticTacToe.winner([' ','o','x',' ','o','x',' ','o',' ','x'],'o')
 
+def test_display_lives(capsys):
+    lives_helpline='\n\nLives Left :  3\nHelpline Left :  1\nScore :  0\n\n\n'
+    KBC.displayScore(3,0,1)
+    captured_stdout, captured_stderr = capsys.readouterr()
+    assert captured_stdout==lives_helpline
+
+def test_quiz_answers_correct(monkeypatch):
+    with open("data/questions.json") as file:
+        data = file.read()
+        questionsDict = json.loads(data)
+    with open("data/options.json") as file:
+        data = file.read()
+        optionsDict = json.loads(data)
+    with open("data/answers.json") as file:
+        data = file.read()
+        answersDict = json.loads(data)
+    with open("data/rewards.json") as file:
+        data = file.read()
+        rewardsDict = json.loads(data)
+    lives = 3
+    helpLines = 1
+    score = 0
+    KBC.displayScore(lives, score, helpLines)
+    for index, question in enumerate(questionsDict, start=1):
+        if lives == 0:
+            assert False
+        opt=StringIO(str(answersDict[question]+1)+'\n')
+        monkeypatch.setattr('sys.stdin',opt)
+        userAnswer = input("Answer : ")
+        if userAnswer == 'quit':
+            assert False
+        else:
+            userAnswer = int(userAnswer)
+            if userAnswer == 'quit':
+                assert False
+            else:
+                userAnswer = int(userAnswer)
+        if userAnswer == 5050:
+            if helpLines > 0:
+                helpLines = 0
+                newOptions = KBC.helpline(
+                    KBC.optionsDict[question], KBC.answersDict[question])
+                userAnswer = int(input("Answer : "))
+                if userAnswer == 'quit':
+                    assert False
+                else:
+                    userAnswer = int(userAnswer)
+                if userAnswer < 3:
+                    if newOptions[userAnswer-1] == KBC.displayCorrect():
+                        score = score + KBC.rewardsDict[question]
+                    else:
+                        lives = lives - 1
+                else:
+                    lives = lives - 1
+            else:
+                userAnswer = int(input("Answer : "))
+                if userAnswer == 'quit':
+                    assert False
+                else:
+                    userAnswer = int(userAnswer)
+                if KBC.answersDict[question] == userAnswer - 1:
+                    score = score + KBC.rewardsDict[question]
+                else:
+                    lives = lives - 1
+        else:
+            if answersDict[question] == userAnswer - 1:
+                score = score + rewardsDict[question]
+            else:
+                lives = lives - 1
+    print('You Won!')
+    print('You can take ' + str(int(score)) + ' Rupees home!')
+    print('Thankyou for playing!')
+    assert True
+
+def test_quiz_answers_wrong(monkeypatch):
+    with open("data/questions.json") as file:
+        data = file.read()
+        questionsDict = json.loads(data)
+    with open("data/options.json") as file:
+        data = file.read()
+        optionsDict = json.loads(data)
+    with open("data/answers.json") as file:
+        data = file.read()
+        answersDict = json.loads(data)
+    with open("data/rewards.json") as file:
+        data = file.read()
+        rewardsDict = json.loads(data)
+    lives = 3
+    helpLines = 1
+    score = 0
+    for index, question in enumerate(questionsDict, start=1):
+        if lives == 0:
+            break
+        opt=StringIO(str(answersDict[question]-1)+'\n')
+        monkeypatch.setattr('sys.stdin',opt)
+        userAnswer = input("Answer : ")
+        if userAnswer == 'quit':
+            assert True
+        else:
+            userAnswer = int(userAnswer)
+            if userAnswer == 'quit':
+                exit()
+            else:
+                userAnswer = int(userAnswer)
+        if userAnswer == 5050:
+            if helpLines > 0:
+                helpLines = 0
+                newOptions = KBC.helpline(
+                    KBC.optionsDict[question], KBC.answersDict[question])
+                userAnswer = int(input("Answer : "))
+                if userAnswer == 'quit':
+                    exit()
+                else:
+                    userAnswer = int(userAnswer)
+                print('\n')
+                if userAnswer < 3:
+                    if newOptions[userAnswer-1] == KBC.displayCorrect():
+                        score = score + KBC.rewardsDict[question]
+                    else:
+                        print('Correct answer : ', KBC.displayCorrect())
+                        lives = lives - 1
+                else:
+                    lives = lives - 1
+            else:
+                userAnswer = int(input("Answer : "))
+                if userAnswer == 'quit':
+                    exit()
+                else:
+                    userAnswer = int(userAnswer)
+                if KBC.answersDict[question] == userAnswer - 1:
+                    score = score + KBC.rewardsDict[question]
+                else:
+                    lives = lives - 1
+        else:
+            if answersDict[question] == userAnswer - 1:
+                score = score + rewardsDict[question]
+            else:
+                lives = lives - 1
+    if(lives==3):
+        print('You Won!')
+        print('You can take ' + str(int(score)) + ' Rupees home!')
+        print('Thankyou for playing!')
+        assert False
+    else:
+        assert True
+
+def test_gui():
+    dis_width = 600
+    dis_height = 400
+    dis = pygame.display.set_mode((dis_width, dis_height))
+    assert dis!=None
+
+def test_snake():
+    dis_width = 600
+    dis_height = 400
+    dis = pygame.display.set_mode((dis_width, dis_height))
+    snake_block=10
+    snake_list=[[10,11],[10,12]]
+    for x in snake_list:
+        pygame.draw.rect(dis,(0,0,0), [x[0], x[1], snake_block, snake_block])
+    assert dis!=None
